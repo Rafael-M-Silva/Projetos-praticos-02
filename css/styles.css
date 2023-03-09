@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+nav, .more {
+  padding: 40px 0px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.recipes ul {
+  position: absolute;
+}
+
+.recipes {
+  display: none;
+  position: relative; 
+}
+
+.recipes li {
+  background: #00000046;
+  text-align: center;
+}
+
+
+.more ul li:hover .recipes {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+.more li {
+  padding: 5px 25px;
+  color: #fff;
+  list-style: none;
+}
+
+.more li:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 25px;
+  font-size: 22px;
+}
+
+a:hover {
+  background: #fff;
+  color: #000;
+}
+
+nav ul li.active a{
+  background: #fff;
+  color: #000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+main h1 {
+  color: #fff;
+  font-size: 5.5rem;
+}
+
+.btn button {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  transition: 0.5 ease;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn button:hover {
+  background: #fff;
+  color: #000;
+}
